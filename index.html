@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stránka o předmětu</title>
+    
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+        body {
+            width: 100vw;
+            height: auto;
+
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            overflow-x: hidden;
+
+            color: #000;
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            border-bottom: 1px solid #ccc;
+        }
+
+            .header {
+                width: 900px;
+                height: 100%;
+
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .logo {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .logo img {
+                    width: auto;
+                    height: 60px;
+                }
+                .logo p {
+                    font-size: 40px;
+                }
+
+                .nav1 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .nav1 p {
+                    width: auto;
+                    height: auto;
+
+                    font-size: 15px;
+
+                    padding: 15px;
+                }
+
+        nav {
+            width: 900px;
+            height: auto;
+
+            font-size: 16px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+            .navItem {
+                width: calc(900px/4);
+                height: 66px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .navItem:first-child, .nav1 p:last-child {
+                background-color: #16697a;
+            }
+            .navItem:nth-child(2) {
+                background-color: #db6400;
+            }
+            .navItem:nth-child(3) {
+                background-color: #ffa62b;
+            }
+            .navItem:last-child {
+                background-color: #393e46;
+            }
+            
+
+        main {
+            width: 900px;
+            height: auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+            .image {
+                width: 100%;
+                height: auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }              
+            .image img {
+                width: 100%;
+                height: auto;
+            }
+
+                .copyright {
+                    width: 100%;
+                    height: 37px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    border-top: 4px solid #1f1f1f;
+                    border-bottom: 4px solid #1f1f1f;
+
+                    background-color: #333;
+                }
+                .copyright p {
+                    padding-right: 10px;
+                }
+
+            .about {
+                width: 100%;
+                height: 337px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                gap: 45px;
+            }
+
+                .head {
+                    width: auto;
+                    height: auto;
+
+                    font-size: 40px;
+
+                    line-height: 50px;
+                }
+                .head h2 {
+                    text-align: center;
+                    letter-spacing: 5px;
+                }
+                .head h2 > span {
+                    border-bottom: 5px solid #cecece;
+                }
+
+                .text {
+                    width: auto;
+                    height: auto;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    text-align: center;
+                }
+                .text p {
+                    font-size: 20px;
+
+                    padding: 10px 20px;
+                }
+
+            .nav2 {
+                width: 880px;
+                height: 268px;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+                .item {
+                    width: 200px;
+                    height: 184px;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    gap: 15px;
+
+                    border: 2px solid;
+                }
+                .item:nth-child(2n), .logo p {
+                    color: #16697a;
+                }
+                .item:nth-child(2n+1) {
+                    color: #db6400;
+                }
+                .item div {
+                    width: 30px;
+                    height: 30px;
+
+                    font-size: 30px;
+                    padding: 15px;
+
+                    display: flex;
+                    justify-content: center;
+
+                    border: 3px solid;
+                    border-radius: 50%;
+                }
+                .item h3 {
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .item p {
+                    width: auto;
+                    height: auto;
+
+                    padding: 0px 10px;
+
+                    text-align: center;
+                }
+
+            .quote {
+                width: 100%;
+                height: 175px;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .quotation {
+                    width: 600px;
+                    height: auto;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    gap: 25px;
+                }
+                
+                    .citation {
+                        width: auto;
+                        height: auto;
+
+                        font-size: 24px;
+
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .citation p > span {
+                        font-size: 45px;
+                    }
+                    
+                    .citate {
+                        width: auto;
+                        height: auto;
+
+                        font-size: 20px;
+
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+
+        footer {
+            width: 900px;
+            height: 245px;
+
+            font-size: 15px;
+
+            display: flex;
+            justify-self: flex-end;
+            justify-content: center;
+
+            background-color: #191919;
+        }
+
+            .footer {
+                width: 100%;
+                height: auto;
+
+                padding: 30px 70px;
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+            .footer div {
+                display: flex;
+                flex-direction: column;
+            }
+            .footer div h3 {
+                font-size: 18px;
+
+                padding-bottom: 20px;
+            }
+            .footer div p, .footer div a {
+                padding-bottom: 10px;
+            }
+
+                .web {
+                    width: 340px;
+                    height: auto;
+                }
+
+                .contact, .wba {
+                    width: auto;
+                    height: auto;
+                }
+                .contact a {
+                    text-decoration: none;
+                }
+
+                .wba span > p {
+                    padding-top: 20px;
+
+                    text-transform: none;
+                }
+      
+        .logo p, .navItem p, .head h2, .item h3, .wba p {
+            text-transform: uppercase;
+        }
+        .logo p, .item h3, .citation p, footer div h3, .wba p {
+            font-weight: 900;
+        }
+        .nav1 p:last-child,  nav, footer {
+            color: #fff;
+        }
+        .about, .quote {
+            background-color: #f2f2f2;
+        }
+        .copyright p, .web p, .contact a, .wba span > p {
+            font-weight: 400;
+
+            line-height: 20px;
+
+            color: #afafaf;
+        }
+        nav, .item p, .navItem p, .copyright p {
+            font-weight: 500;
+        }
+
+        @media (max-width: 900px) {
+            header {
+                padding: 5px 0px;
+
+                flex-direction: column;
+
+                border-bottom: 3px solid #ccc;
+            }
+
+                .header {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                .logo {
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .nav1 {
+                    padding: 0px 5px;
+
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+            nav {
+                font-size: 16px;
+
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+                .navItem {
+                    width: calc(100%/2);
+                }
+
+            /*main*/
+
+                .image {
+                    justify-content: center;
+                }
+
+                .about {
+                    padding: 70px 0px;
+                }
+                    
+                    .head h2 {
+                        font-size: 30px;
+                    }
+
+                .nav2 {
+                    padding: 35px 0px;
+
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    gap: 20px;
+                }
+
+                .quote {
+                    padding: 40px 0px;
+                }
+
+                    .quotation {
+                        justify-content: center;
+
+                        gap: 25px;
+                    }
+                    
+                        .citation, .citate {
+                            text-align: center;
+                            padding: 0px 10px;
+                        }
+
+            /*footer*/
+
+                .footer {
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    gap: 60px;
+                }
+            
+            header, nav, main, footer, .header, .nav2, .quotation, .web, .contact, .wba {
+                width: 100%;
+            }
+            nav, .image, .about, .nav2, .quote, footer {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 360px) {
+            body {
+                font-size-adjust: 0.5;
+            }
+            .navItem {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 200px) {
+            body {
+                font-size-adjust: 0.35;
+            }
+            .navItem {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+    
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/logo_MtAtpg2I.png" alt="Logo">
+                <p>wba</p>
+            </div>
+            <div class="nav1">
+                <p>Jak získat body</p>
+                <p>Uplatnění</p>
+                <p>Závěrečná práce</p>
+                <p>Nápověda</p>
+                <p>Přihlásit se</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="navItem"><p>úkoly</p></div>
+        <div class="navItem"><p>závěrečná práce</p></div>
+        <div class="navItem"><p>aktivita</p></div>
+        <div class="navItem"><p>testy</p></div>
+    </nav>
+    <main>
+        <article class="image">
+                <img src="https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/google_eTAtUtuf.jpg" alt="Google eyes">
+            <section class="copyright">
+                <p>&#169; Pixabay 2020</p>
+            </section>
+        </article>
+        <article class="about">
+            <section class="head">
+                <h2>o <span>předmět</span>u</h2>
+            </section>
+            <section class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti alias optio corrupti aspernatur distinctio
+                    reprehenderit cumque rerum, nam debitis quod reiciendis praesentium excepturi, consectetur enim nostrum
+                    libero culpa quas corporis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, autem veritatis modi dicta illo expedita
+                    quidem, a pariatur natus necessitatibus rerum aspernatur? Cumque,soluta. Facilis fuga asperiores porro ea
+                    saepe.</p>
+            </section>
+        </article>
+        <article class="nav2">
+            <section class="item">
+                <div><i class="fas fa-hourglass-half"></i></div>
+                <h3>časová dotace</h3>
+                <p>Časová dotace pro WBA jsou 2 hodiny týdně.</p>
+            </section>
+            <section class="item">
+                <div><i class="fas fa-school"></i></div>
+                <h3>uplatnění</h3>
+                <p>Z webvých aplikací lze maturovat pomocí MVOP.</p>
+            </section>
+            <section class="item">
+                <div><i class="fas fa-virus-slash"></i></div>
+                <h3>zrušme to</h3>
+                <p>Ten virus musíme zrušit. Počkat, kde to jsem?</p>
+            </section>
+            <section class="item">
+                <div><i class="fas fa-cat"></i></div>
+                <h3>haf!</h3>
+                <p>Haf? :monkaW:</p>
+            </section>
+        </article>
+        <article class="quote">
+            <section class="quotation">
+                <div class="citation"><p><span>&#8222;</span> Všeliké kvaltování toliko pro hovada dobré jest <span>&#8221;</span></p></div>
+                <div class="citate"><p>- Idk, někdo na chodbě</p></div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="web">
+                <h3>Webové stránky</h3>
+                <p>Stránka nereflektuje žádné reálné informace,
+                    veškerý text je humorného rázu - neberte jej
+                    seriózně. Určeno pro studenty na SSPŠ <i class="fas fa-heart"></i>.</p>
+            </div>
+            <div class="contact">
+                <h3>Kontakt</h3>
+                <a href="mailto:matej.cajthaml@ssps.cz">matej.cajthaml@ssps.cz</a>
+                <a href="tel:+420284016111">+420 284 016 111</a>
+            </div>
+            <div class="wba">
+                <h3>WBA</h3>
+                <p>úžasné</p>
+                <p>krásné</p>
+                <p>vtipné</p>
+                <span><p>2021 &#169; Matěj Cajthaml</p></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--
+    Zdroje:
+        - Discord server - název fontu
+        - Font - Google fonts
+        - Ikony - Font Awesome
+        - Uvozovky - https://unicode-table.com/en/201E/, https://unicode-table.com/en/201D/
+        - Copyright - https://unicode-table.com/en/00A9/
+        - Prezentace Moderní rozložení 1 - seznam tagů pro moderní rozožení
+-->
