@@ -24,9 +24,11 @@
             align-items: center;
             justify-content: flex-start;
 
-            overflow-x: hidden;
-
             color: #000;
+        }
+
+        .body {
+            overflow-x: hidden;
         }
 
         header {
@@ -644,108 +646,110 @@
 </head>
     
 <body>
-    <header>
-        <div class="header">
-            <div class="logo">
-                <img src="https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/logo_MtAtpg2I.png" alt="Logo">
-                <p>wba</p>
+    <div class="body">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/logo_MtAtpg2I.png" alt="Logo">
+                    <p>wba</p>
+                </div>
+                <div class="nav1" role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox"/>
+    
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                        <ul id="menu">
+                            <li>Jak získat body</li>
+                            <li>Uplatnění</li>
+                            <li>Závěrečná práce</li>
+                            <li>Nápověda</li>
+                            <li>Přihlásit se</li>
+                        </ul>
+                      </div>
+                </div>
             </div>
-            <div class="nav1" role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox"/>
-
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    
-                    <ul id="menu">
-                        <li>Jak získat body</li>
-                        <li>Uplatnění</li>
-                        <li>Závěrečná práce</li>
-                        <li>Nápověda</li>
-                        <li>Přihlásit se</li>
-                    </ul>
-                  </div>
+        </header>
+        <nav>
+            <div class="navItem"><p>úkoly</p></div>
+            <div class="navItem"><p>závěrečná práce</p></div>
+            <div class="navItem"><p>aktivita</p></div>
+            <div class="navItem"><p>testy</p></div>
+        </nav>
+        <main>
+            <article class="image">
+                    <img src="https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/google_eTAtUtuf.jpg" alt="Google eyes">
+                <section class="copyright">
+                    <p>&#169; Pixabay 2020</p>
+                </section>
+            </article>
+            <article class="about">
+                <section class="head">
+                    <h2>o <span>předmět</span>u</h2>
+                </section>
+                <section class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti alias optio corrupti aspernatur distinctio
+                        reprehenderit cumque rerum, nam debitis quod reiciendis praesentium excepturi, consectetur enim nostrum
+                        libero culpa quas corporis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, autem veritatis modi dicta illo expedita
+                        quidem, a pariatur natus necessitatibus rerum aspernatur? Cumque,soluta. Facilis fuga asperiores porro ea
+                        saepe.</p>
+                </section>
+            </article>
+            <article class="nav2">
+                <section class="item">
+                    <div><i class="fas fa-hourglass-half"></i></div>
+                    <h3>časová dotace</h3>
+                    <p>Časová dotace pro WBA jsou 2 hodiny týdně.</p>
+                </section>
+                <section class="item">
+                    <div><i class="fas fa-school"></i></div>
+                    <h3>uplatnění</h3>
+                    <p>Z webvých aplikací lze maturovat pomocí MVOP.</p>
+                </section>
+                <section class="item">
+                    <div><i class="fas fa-virus-slash"></i></div>
+                    <h3>zrušme to</h3>
+                    <p>Ten virus musíme zrušit. Počkat, kde to jsem?</p>
+                </section>
+                <section class="item">
+                    <div><i class="fas fa-cat"></i></div>
+                    <h3>haf!</h3>
+                    <p>Haf? :monkaW:</p>
+                </section>
+            </article>
+            <article class="quote">
+                <section class="quotation">
+                    <div class="citation"><p><span>&#8222;</span> Všeliké kvaltování toliko pro hovada dobré jest <span>&#8221;</span></p></div>
+                    <div class="citate"><p>- Idk, někdo na chodbě</p></div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="web">
+                    <h3>Webové stránky</h3>
+                    <p>Stránka nereflektuje žádné reálné informace,
+                        veškerý text je humorného rázu - neberte jej
+                        seriózně. Určeno pro studenty na SSPŠ <i class="fas fa-heart"></i>.</p>
+                </div>
+                <div class="contact">
+                    <h3>Kontakt</h3>
+                    <a href="mailto:matej.cajthaml@ssps.cz">matej.cajthaml@ssps.cz</a>
+                    <a href="tel:+420284016111">+420 284 016 111</a>
+                </div>
+                <div class="wba">
+                    <h3>WBA</h3>
+                    <p>úžasné</p>
+                    <p>krásné</p>
+                    <p>vtipné</p>
+                    <span><p>2021 &#169; Matěj Cajthaml</p></span>
+                </div>
             </div>
-        </div>
-    </header>
-    <nav>
-        <div class="navItem"><p>úkoly</p></div>
-        <div class="navItem"><p>závěrečná práce</p></div>
-        <div class="navItem"><p>aktivita</p></div>
-        <div class="navItem"><p>testy</p></div>
-    </nav>
-    <main>
-        <article class="image">
-                <img src="https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/google_eTAtUtuf.jpg" alt="Google eyes">
-            <section class="copyright">
-                <p>&#169; Pixabay 2020</p>
-            </section>
-        </article>
-        <article class="about">
-            <section class="head">
-                <h2>o <span>předmět</span>u</h2>
-            </section>
-            <section class="text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti alias optio corrupti aspernatur distinctio
-                    reprehenderit cumque rerum, nam debitis quod reiciendis praesentium excepturi, consectetur enim nostrum
-                    libero culpa quas corporis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, autem veritatis modi dicta illo expedita
-                    quidem, a pariatur natus necessitatibus rerum aspernatur? Cumque,soluta. Facilis fuga asperiores porro ea
-                    saepe.</p>
-            </section>
-        </article>
-        <article class="nav2">
-            <section class="item">
-                <div><i class="fas fa-hourglass-half"></i></div>
-                <h3>časová dotace</h3>
-                <p>Časová dotace pro WBA jsou 2 hodiny týdně.</p>
-            </section>
-            <section class="item">
-                <div><i class="fas fa-school"></i></div>
-                <h3>uplatnění</h3>
-                <p>Z webvých aplikací lze maturovat pomocí MVOP.</p>
-            </section>
-            <section class="item">
-                <div><i class="fas fa-virus-slash"></i></div>
-                <h3>zrušme to</h3>
-                <p>Ten virus musíme zrušit. Počkat, kde to jsem?</p>
-            </section>
-            <section class="item">
-                <div><i class="fas fa-cat"></i></div>
-                <h3>haf!</h3>
-                <p>Haf? :monkaW:</p>
-            </section>
-        </article>
-        <article class="quote">
-            <section class="quotation">
-                <div class="citation"><p><span>&#8222;</span> Všeliké kvaltování toliko pro hovada dobré jest <span>&#8221;</span></p></div>
-                <div class="citate"><p>- Idk, někdo na chodbě</p></div>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="web">
-                <h3>Webové stránky</h3>
-                <p>Stránka nereflektuje žádné reálné informace,
-                    veškerý text je humorného rázu - neberte jej
-                    seriózně. Určeno pro studenty na SSPŠ <i class="fas fa-heart"></i>.</p>
-            </div>
-            <div class="contact">
-                <h3>Kontakt</h3>
-                <a href="mailto:matej.cajthaml@ssps.cz">matej.cajthaml@ssps.cz</a>
-                <a href="tel:+420284016111">+420 284 016 111</a>
-            </div>
-            <div class="wba">
-                <h3>WBA</h3>
-                <p>úžasné</p>
-                <p>krásné</p>
-                <p>vtipné</p>
-                <span><p>2021 &#169; Matěj Cajthaml</p></span>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
 
@@ -759,4 +763,5 @@
         - Prezentace Moderní rozložení 1 - seznam tagů pro moderní rozožení
         - Zmenšení písma - https://www.w3schools.com/cssref/css3_pr_font-size-adjust.asp
         - Hamburger menu - https://codepen.io/erikterwan/pen/EVzeRP
+        - Problém s přetékáním na telefonu - https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers
 -->
